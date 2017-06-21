@@ -14,3 +14,5 @@ awk ‘$3 == 0 { print $1 }’ ke1.txt
 #awk program structure
 pattern {action}
 pattern {action}
+#perform awk program
+awk -f progfile     optional list of input files
