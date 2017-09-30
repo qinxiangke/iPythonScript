@@ -1,0 +1,31 @@
+
+
+#                          C             C++           Warning Level
+#Syntax Errors             1 - 199    1001 - 1199           1
+#Internal Errors         200 - 299    1200 - 1299           0
+#Fatal Errors            300 - 399                          0
+#Warnings                400 - 699    1400 - 1699           2
+#Informational           700 - 899    1700 - 1899           3
+#Elective Notes          900 - 999    1900 - 1999           4
+#Elective Notes         9000 - 9199   Same                  4
+#arithmetic:
+#    For C++, Using Error ID 
+#    For C, Deviding Error ID by 1000 there is a quotient and a remainder.
+#The quotient is in the range of 0-9.  The remainder lies in the range
+#0-999. Using the remainder.
+
+RowID=['Syntax Errors','Internal Errors','Fatal Errors','Warnings','Informational','Elective Notes','Elective Notes']
+RowVal=['    1 - 199    1001 - 1199          1',
+' 200 - 299    1200 - 1299           0',
+' 300 - 399                          0',
+' 400 - 699    1400 - 1699           2',
+' 700 - 899    1700 - 1899           3',
+' 900 - 999    1900 - 1999           4',
+'9000 - 9199   Same                  4',
+]
+
+table=dict()
+for rowid,rowval in RowID,RowVal:
+    print(rowid)
+#    table[rowid]=rowval    
+    
